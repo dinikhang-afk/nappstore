@@ -10,19 +10,8 @@ static NSString *const kNotifyName = @"com.adr.checkiap.trigger_buy";
 // the binary, causing the tweak to write to a redirected location that
 // NappStore cannot see. Constructing the path dynamically bypasses this.
 static NSString *outputDirectory(void) {
-    // Build path from components at runtime to avoid RootHide binary patching.
-    // NSHomeDirectory() returns the app's own sandbox when injected, so we
-    // construct /var/mobile/Documents/IAPCheck manually.
-    NSMutableString *path = [NSMutableString stringWithString:@"/va"];
-    [path appendString:@"r/mobi"];
-    [path appendString:@"le/Documen"];
-    [path appendString:@"ts/IAPCheck"];
     NSFileManager *fm = [NSFileManager defaultManager];
-    [fm createDirectoryAtPath:path withIntermediateDirectories:YES attributes:nil error:nil];
-    if ([fm isWritableFileAtPath:path]) {
-        return [path copy];
-    }
-    // Fallback: /tmp/IAPCheck
+    // Primary: /tmp/IAPCheck — not redirected by RootHide
     NSString *tmp = [NSTemporaryDirectory() stringByAppendingPathComponent:@"IAPCheck"];
     [fm createDirectoryAtPath:tmp withIntermediateDirectories:YES attributes:nil error:nil];
     return tmp;
