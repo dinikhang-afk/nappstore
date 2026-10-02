@@ -3,10 +3,8 @@ name: Build Companion Tweak
 on:
   push:
     branches: [main]
-    paths: ['CompanionTweak/**']
   pull_request:
     branches: [main]
-    paths: ['CompanionTweak/**']
   workflow_dispatch:
 
 jobs:
