@@ -1,0 +1,325 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		000000000000000000200001 /* App/IAPCheckApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000100001 /* App/IAPCheckApp.swift */; };
+		000000000000000000200002 /* Models/Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000100002 /* Models/Models.swift */; };
+		000000000000000000200003 /* Services/AppStoreSearchService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000100003 /* Services/AppStoreSearchService.swift */; };
+		000000000000000000200004 /* Services/DiffEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000100004 /* Services/DiffEngine.swift */; };
+		000000000000000000200005 /* Services/DirectPaymentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000100005 /* Services/DirectPaymentHandler.swift */; };
+		000000000000000000200006 /* Services/InstalledAppsScanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000100006 /* Services/InstalledAppsScanner.swift */; };
+		000000000000000000200007 /* Services/StoreKitService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000100007 /* Services/StoreKitService.swift */; };
+		000000000000000000200008 /* Services/TweakBridge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000100008 /* Services/TweakBridge.swift */; };
+		000000000000000000200009 /* Theme/Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000100009 /* Theme/Theme.swift */; };
+		00000000000000000020000A /* Views/Apps/AppIAPDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000000010000A /* Views/Apps/AppIAPDetailView.swift */; };
+		00000000000000000020000B /* Views/Apps/InstalledAppsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000000010000B /* Views/Apps/InstalledAppsView.swift */; };
+		00000000000000000020000C /* Views/Components/CommonViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000000010000C /* Views/Components/CommonViews.swift */; };
+		00000000000000000020000D /* Views/Dashboard/DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000000010000D /* Views/Dashboard/DashboardView.swift */; };
+		00000000000000000020000E /* Views/Diff/DiffView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000000010000E /* Views/Diff/DiffView.swift */; };
+		00000000000000000020000F /* Views/Explore/ExploreStoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000000010000F /* Views/Explore/ExploreStoreView.swift */; };
+		000000000000000000200010 /* Views/Explore/ProductDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000100010 /* Views/Explore/ProductDetailView.swift */; };
+		000000000000000000200011 /* Views/History/HistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000100011 /* Views/History/HistoryView.swift */; };
+		000000000000000000200012 /* Views/Installed/InstalledView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000100012 /* Views/Installed/InstalledView.swift */; };
+		000000000000000000200013 /* Views/Library/LibraryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000100013 /* Views/Library/LibraryView.swift */; };
+		000000000000000000200014 /* Views/Logs/LogsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000100014 /* Views/Logs/LogsView.swift */; };
+		000000000000000000200015 /* Views/MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000100015 /* Views/MainTabView.swift */; };
+		000000000000000000200016 /* Views/Modal/IAPSpecSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000100016 /* Views/Modal/IAPSpecSheet.swift */; };
+		000000000000000000200017 /* Views/Modal/PurchaseConfirmSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000100017 /* Views/Modal/PurchaseConfirmSheet.swift */; };
+		000000000000000000200018 /* Views/Settings/SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000100018 /* Views/Settings/SettingsView.swift */; };
+		D00000000000000000000001 /* AppIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 300000000000000000000004 /* AppIcon.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		000000000000000000100001 /* App/IAPCheckApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App/IAPCheckApp.swift; sourceTree = "<group>"; };
+		000000000000000000100002 /* Models/Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models/Models.swift; sourceTree = "<group>"; };
+		000000000000000000100003 /* Services/AppStoreSearchService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Services/AppStoreSearchService.swift; sourceTree = "<group>"; };
+		000000000000000000100004 /* Services/DiffEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Services/DiffEngine.swift; sourceTree = "<group>"; };
+		000000000000000000100005 /* Services/DirectPaymentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Services/DirectPaymentHandler.swift; sourceTree = "<group>"; };
+		000000000000000000100006 /* Services/InstalledAppsScanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Services/InstalledAppsScanner.swift; sourceTree = "<group>"; };
+		000000000000000000100007 /* Services/StoreKitService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Services/StoreKitService.swift; sourceTree = "<group>"; };
+		000000000000000000100008 /* Services/TweakBridge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Services/TweakBridge.swift; sourceTree = "<group>"; };
+		000000000000000000100009 /* Theme/Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme/Theme.swift; sourceTree = "<group>"; };
+		00000000000000000010000A /* Views/Apps/AppIAPDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Views/Apps/AppIAPDetailView.swift; sourceTree = "<group>"; };
+		00000000000000000010000B /* Views/Apps/InstalledAppsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Views/Apps/InstalledAppsView.swift; sourceTree = "<group>"; };
+		00000000000000000010000C /* Views/Components/CommonViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Views/Components/CommonViews.swift; sourceTree = "<group>"; };
+		00000000000000000010000D /* Views/Dashboard/DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Views/Dashboard/DashboardView.swift; sourceTree = "<group>"; };
+		00000000000000000010000E /* Views/Diff/DiffView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Views/Diff/DiffView.swift; sourceTree = "<group>"; };
+		00000000000000000010000F /* Views/Explore/ExploreStoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Views/Explore/ExploreStoreView.swift; sourceTree = "<group>"; };
+		000000000000000000100010 /* Views/Explore/ProductDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Views/Explore/ProductDetailView.swift; sourceTree = "<group>"; };
+		000000000000000000100011 /* Views/History/HistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Views/History/HistoryView.swift; sourceTree = "<group>"; };
+		000000000000000000100012 /* Views/Installed/InstalledView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Views/Installed/InstalledView.swift; sourceTree = "<group>"; };
+		000000000000000000100013 /* Views/Library/LibraryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Views/Library/LibraryView.swift; sourceTree = "<group>"; };
+		000000000000000000100014 /* Views/Logs/LogsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Views/Logs/LogsView.swift; sourceTree = "<group>"; };
+		000000000000000000100015 /* Views/MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Views/MainTabView.swift; sourceTree = "<group>"; };
+		000000000000000000100016 /* Views/Modal/IAPSpecSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Views/Modal/IAPSpecSheet.swift; sourceTree = "<group>"; };
+		000000000000000000100017 /* Views/Modal/PurchaseConfirmSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Views/Modal/PurchaseConfirmSheet.swift; sourceTree = "<group>"; };
+		000000000000000000100018 /* Views/Settings/SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Views/Settings/SettingsView.swift; sourceTree = "<group>"; };
+		300000000000000000000001 /* NappStore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NappStore.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		300000000000000000000002 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		300000000000000000000003 /* entitlements.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = entitlements.plist; sourceTree = "<group>"; };
+		300000000000000000000004 /* AppIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AppIcon.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		400000000000000000000001 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		500000000000000000000001 = {
+			isa = PBXGroup;
+			children = (
+				500000000000000000000002 /* Sources */,
+				300000000000000000000002 /* Info.plist */,
+				300000000000000000000003 /* entitlements.plist */,
+				500000000000000000000003 /* Products */,
+				CE1723EC306DA0A3000427DC /* Recovered References */,
+			);
+			sourceTree = "<group>";
+		};
+		500000000000000000000002 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				000000000000000000100001 /* App/IAPCheckApp.swift */,
+				000000000000000000100002 /* Models/Models.swift */,
+				000000000000000000100003 /* Services/AppStoreSearchService.swift */,
+				000000000000000000100004 /* Services/DiffEngine.swift */,
+				000000000000000000100005 /* Services/DirectPaymentHandler.swift */,
+				000000000000000000100006 /* Services/InstalledAppsScanner.swift */,
+				000000000000000000100007 /* Services/StoreKitService.swift */,
+				000000000000000000100008 /* Services/TweakBridge.swift */,
+				000000000000000000100009 /* Theme/Theme.swift */,
+				00000000000000000010000A /* Views/Apps/AppIAPDetailView.swift */,
+				00000000000000000010000B /* Views/Apps/InstalledAppsView.swift */,
+				00000000000000000010000C /* Views/Components/CommonViews.swift */,
+				00000000000000000010000D /* Views/Dashboard/DashboardView.swift */,
+				00000000000000000010000E /* Views/Diff/DiffView.swift */,
+				00000000000000000010000F /* Views/Explore/ExploreStoreView.swift */,
+				000000000000000000100010 /* Views/Explore/ProductDetailView.swift */,
+				000000000000000000100011 /* Views/History/HistoryView.swift */,
+				000000000000000000100012 /* Views/Installed/InstalledView.swift */,
+				000000000000000000100013 /* Views/Library/LibraryView.swift */,
+				000000000000000000100014 /* Views/Logs/LogsView.swift */,
+				000000000000000000100015 /* Views/MainTabView.swift */,
+				000000000000000000100016 /* Views/Modal/IAPSpecSheet.swift */,
+				000000000000000000100017 /* Views/Modal/PurchaseConfirmSheet.swift */,
+				000000000000000000100018 /* Views/Settings/SettingsView.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		500000000000000000000003 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				300000000000000000000001 /* NappStore.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CE1723EC306DA0A3000427DC /* Recovered References */ = {
+			isa = PBXGroup;
+			children = (
+				300000000000000000000004 /* AppIcon.png */,
+			);
+			name = "Recovered References";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		600000000000000000000001 /* IAPCheckApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 700000000000000000000002 /* Build configuration list for PBXNativeTarget "IAPCheckApp" */;
+			buildPhases = (
+				800000000000000000000001 /* Sources */,
+				E00000000000000000000001 /* Resources */,
+				400000000000000000000001 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = IAPCheckApp;
+			productName = NappStore;
+			productReference = 300000000000000000000001 /* NappStore.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		900000000000000000000001 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1600;
+			};
+			buildConfigurationList = 700000000000000000000001 /* Build configuration list for PBXProject "IAPCheck" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 500000000000000000000001;
+			productRefGroup = 500000000000000000000003 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				600000000000000000000001 /* IAPCheckApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E00000000000000000000001 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D00000000000000000000001 /* AppIcon.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		800000000000000000000001 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				000000000000000000200001 /* App/IAPCheckApp.swift in Sources */,
+				000000000000000000200002 /* Models/Models.swift in Sources */,
+				000000000000000000200003 /* Services/AppStoreSearchService.swift in Sources */,
+				000000000000000000200004 /* Services/DiffEngine.swift in Sources */,
+				000000000000000000200005 /* Services/DirectPaymentHandler.swift in Sources */,
+				000000000000000000200006 /* Services/InstalledAppsScanner.swift in Sources */,
+				000000000000000000200007 /* Services/StoreKitService.swift in Sources */,
+				000000000000000000200008 /* Services/TweakBridge.swift in Sources */,
+				000000000000000000200009 /* Theme/Theme.swift in Sources */,
+				00000000000000000020000A /* Views/Apps/AppIAPDetailView.swift in Sources */,
+				00000000000000000020000B /* Views/Apps/InstalledAppsView.swift in Sources */,
+				00000000000000000020000C /* Views/Components/CommonViews.swift in Sources */,
+				00000000000000000020000D /* Views/Dashboard/DashboardView.swift in Sources */,
+				00000000000000000020000E /* Views/Diff/DiffView.swift in Sources */,
+				00000000000000000020000F /* Views/Explore/ExploreStoreView.swift in Sources */,
+				000000000000000000200010 /* Views/Explore/ProductDetailView.swift in Sources */,
+				000000000000000000200011 /* Views/History/HistoryView.swift in Sources */,
+				000000000000000000200012 /* Views/Installed/InstalledView.swift in Sources */,
+				000000000000000000200013 /* Views/Library/LibraryView.swift in Sources */,
+				000000000000000000200014 /* Views/Logs/LogsView.swift in Sources */,
+				000000000000000000200015 /* Views/MainTabView.swift in Sources */,
+				000000000000000000200016 /* Views/Modal/IAPSpecSheet.swift in Sources */,
+				000000000000000000200017 /* Views/Modal/PurchaseConfirmSheet.swift in Sources */,
+				000000000000000000200018 /* Views/Settings/SettingsView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		A00000000000000000000001 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = MMJS5QBS95;
+				ENABLE_TESTABILITY = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		A00000000000000000000002 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = MMJS5QBS95;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		A00000000000000000000003 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = entitlements.dev.plist;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = MMJS5QBS95;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.dothanh.nappstore;
+				PRODUCT_NAME = NappStore;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A00000000000000000000004 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = entitlements.dev.plist;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = MMJS5QBS95;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.dothanh.nappstore;
+				PRODUCT_NAME = NappStore;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		700000000000000000000001 /* Build configuration list for PBXProject "IAPCheck" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A00000000000000000000001 /* Debug */,
+				A00000000000000000000002 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		700000000000000000000002 /* Build configuration list for PBXNativeTarget "IAPCheckApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A00000000000000000000003 /* Debug */,
+				A00000000000000000000004 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 900000000000000000000001 /* Project object */;
+}

@@ -1,0 +1,9 @@
+Package: com.dini.pay
+Name: Dini Pay
+Version: 1.0.0
+Architecture: iphoneos-arm64
+Description: In-App Purchase Inspector & Trigger (App Store, Sandbox, Direct Receipt Injection).
+Maintainer: Dini Team
+Author: Dini Team
+Section: Utilities
+Depends: firmware (>= 15.0)

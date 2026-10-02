@@ -1,0 +1,22 @@
+# Build artifacts
+build/
+output/*.ipa
+output/*.tipa
+*.deb
+
+# Xcode
+*.xcuserdata
+*.xcuserstate
+DerivedData/
+*.xcworkspace/xcuserdata/
+
+# macOS
+.DS_Store
+Thumbs.db
+
+# Theos
+.theos/
+packages/
+
+# Screenshots
+device-screen*.png

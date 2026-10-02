@@ -1,0 +1,9 @@
+Package: com.dini.iapdumper
+Name: IAP Dumper
+Version: 1.0.0
+Architecture: iphoneos-arm64
+Description: Hooks StoreKit in all apps to dump IAP catalog as JSON for NappStore.
+Maintainer: Dini Team
+Author: Dini Team
+Section: Tweaks
+Depends: mobilesubstrate, firmware (>= 15.0)
