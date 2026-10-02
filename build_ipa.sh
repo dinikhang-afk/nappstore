@@ -20,7 +20,7 @@ mkdir -p "${APP_DIR}" "${OUTPUT_DIR}"
 SWIFT_FILES=()
 while IFS= read -r file; do
     SWIFT_FILES+=("${file}")
-done < <(rg --files "${ROOT_DIR}/Sources" -g '*.swift' | sort)
+done < <(find "${ROOT_DIR}/Sources" -name '*.swift' | sort)
 if [[ "${#SWIFT_FILES[@]}" -eq 0 ]]; then
     echo "Không tìm thấy mã nguồn Swift trong Sources" >&2
     exit 1
