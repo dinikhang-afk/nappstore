@@ -2,21 +2,30 @@
 #import <StoreKit/StoreKit.h>
 #import <objc/runtime.h>
 
-// Output directory matching NappStore's TweakBridge searchPaths
-static NSString *const kOutputDir = @"/var/mobile/Documents/IAPCheck";
-// Rootless fallback
-static NSString *const kOutputDirRootless = @"/var/jb/var/mobile/Documents/IAPCheck";
 // Darwin notification NappStore listens for
 static NSString *const kNotifyName = @"com.adr.checkiap.trigger_buy";
 
+// Build paths at runtime to avoid RootHide compile-time string patching.
+// RootHide rewrites literal paths like "/var/mobile/Documents/IAPCheck" in
+// the binary, causing the tweak to write to a redirected location that
+// NappStore cannot see. Constructing the path dynamically bypasses this.
 static NSString *outputDirectory(void) {
+    // Build path from components at runtime to avoid RootHide binary patching.
+    // NSHomeDirectory() returns the app's own sandbox when injected, so we
+    // construct /var/mobile/Documents/IAPCheck manually.
+    NSMutableString *path = [NSMutableString stringWithString:@"/va"];
+    [path appendString:@"r/mobi"];
+    [path appendString:@"le/Documen"];
+    [path appendString:@"ts/IAPCheck"];
     NSFileManager *fm = [NSFileManager defaultManager];
-    // Prefer rootless path on modern jailbreaks
-    if ([fm isWritableFileAtPath:@"/var/jb/var/mobile/Documents"] ||
-        [fm fileExistsAtPath:@"/var/jb"]) {
-        return kOutputDirRootless;
+    [fm createDirectoryAtPath:path withIntermediateDirectories:YES attributes:nil error:nil];
+    if ([fm isWritableFileAtPath:path]) {
+        return [path copy];
     }
-    return kOutputDir;
+    // Fallback: /tmp/IAPCheck
+    NSString *tmp = [NSTemporaryDirectory() stringByAppendingPathComponent:@"IAPCheck"];
+    [fm createDirectoryAtPath:tmp withIntermediateDirectories:YES attributes:nil error:nil];
+    return tmp;
 }
 
 static void ensureDirectory(NSString *path) {
