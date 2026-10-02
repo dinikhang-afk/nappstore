@@ -315,13 +315,19 @@ public final class StoreKitService: ObservableObject {
         }
     }
 
-    /// Loads the real catalog export copied from the connected reference app
-    /// when no companion snapshot has been supplied yet. This is a read-only
-    /// catalog snapshot; it does not grant access to another app's receipt or
-    /// StoreKit transaction queue.
-    @discardableResult
-
-
+    private func bundleIDHint(for file: URL) -> String? {
+        let name = file.deletingPathExtension().lastPathComponent
+        guard !name.isEmpty else { return nil }
+        if let range = name.range(of: "_v", options: .backwards), range.lowerBound > name.startIndex {
+            let candidate = String(name[..<range.lowerBound])
+            return candidate.contains(".") ? candidate : nil
+        }
+        if name.hasSuffix("_iap") {
+            let candidate = String(name.dropLast(4))
+            return candidate.contains(".") ? candidate : nil
+        }
+        return name.contains(".") ? name : nil
+    }
 
     /// Accepts the current ScanSnapshot shape plus the older tweak exports
     /// used by the reference app (productIdentifier, discounts, data/items

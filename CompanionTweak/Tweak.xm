@@ -26,6 +26,21 @@ static void ensureDirectory(NSString *path) {
     }
 }
 
+// Period helper — must be declared before serializeProduct
+static NSString *periodStringFromPeriod(id subscriptionPeriod) {
+    if (@available(iOS 11.2, *)) {
+        SKProductSubscriptionPeriod *period = subscriptionPeriod;
+        if (!period) return @"";
+        switch (period.unit) {
+            case SKProductPeriodUnitDay:   return [NSString stringWithFormat:@"%luD", (unsigned long)period.numberOfUnits];
+            case SKProductPeriodUnitWeek:  return [NSString stringWithFormat:@"%luW", (unsigned long)period.numberOfUnits];
+            case SKProductPeriodUnitMonth: return [NSString stringWithFormat:@"%luM", (unsigned long)period.numberOfUnits];
+            case SKProductPeriodUnitYear:  return [NSString stringWithFormat:@"%luY", (unsigned long)period.numberOfUnits];
+        }
+    }
+    return @"";
+}
+
 static NSDictionary *serializeProduct(SKProduct *product) {
     NSMutableDictionary *dict = [NSMutableDictionary dictionary];
     dict[@"productId"] = product.productIdentifier ?: @"";
@@ -110,20 +125,7 @@ static NSDictionary *serializeProduct(SKProduct *product) {
     return [dict copy];
 }
 
-// Cannot use [self ...] in a C function — use a plain C helper instead
-static NSString *periodStringFromPeriod(id subscriptionPeriod) {
-    if (@available(iOS 11.2, *)) {
-        SKProductSubscriptionPeriod *period = subscriptionPeriod;
-        if (!period) return @"";
-        switch (period.unit) {
-            case SKProductPeriodUnitDay:   return [NSString stringWithFormat:@"%luD", (unsigned long)period.numberOfUnits];
-            case SKProductPeriodUnitWeek:  return [NSString stringWithFormat:@"%luW", (unsigned long)period.numberOfUnits];
-            case SKProductPeriodUnitMonth: return [NSString stringWithFormat:@"%luM", (unsigned long)period.numberOfUnits];
-            case SKProductPeriodUnitYear:  return [NSString stringWithFormat:@"%luY", (unsigned long)period.numberOfUnits];
-        }
-    }
-    return @"";
-}
+
 
 static void writeSnapshot(NSString *bundleId, NSArray<NSDictionary *> *products) {
     if (products.count == 0) return;
